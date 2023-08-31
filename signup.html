@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Thapar_Basket">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thapar_Basket</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png"><!-- add image logo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #EAE9FF;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            // Password check
+            var passwordInput = document.getElementById("password");
+            var repasswordInput = document.getElementById("repassword");
+            if (passwordInput.value !== repasswordInput.value) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Top navigation bar -->
+    <div id="header">
+        <ul id="navbar">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="shopping.php">Shopping</a></li>
+            <li><a href="services.php">Services</a></li>
+        </ul>
+        <ul id="navbar">
+            <li><a href="orders.php">Orders</a></li>
+            <li><a href="cart.php">Cart</a></li>
+        </ul>
+    </div>
+
+    <!-- Signup form -->
+    <div class="login">
+        <form action="signup.php" method="post" onsubmit="return validateForm()">
+            <fieldset>
+                <legend style="padding-bottom: 20px">SignUp Form</legend>
+
+                <label for="name">Enter Username:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your username" style="float: right" required /><br /><br />
+
+                <label for="mobile">Enter Mobile-No:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit phone no" style="float: right" pattern="[0-9]{10}" required /><br /><br />
+
+                <label for="mail">Enter Email:</label>
+                <input type="email" id="mail" name="mail" placeholder="Enter your mail id" style="float: right" required /><br /><br />
+
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" placeholder="********" style="float: right" minlength="5" required /><br /><br />
+
+                <label for="repassword">Re-enter Password:</label>
+                <input type="password" id="repassword" name="repassword" placeholder="********" style="float: right" required /><br /><br />
+
+                <input type="submit" value="signup" style="float: right" />
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <h4>&copy; 2023 This is an original website by Multi-Services Pathankot</h4>
+    </footer>
+
+</body>
+
+</html>

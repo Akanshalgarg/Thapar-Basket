@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Thapar_Basket" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thapar_Basket</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png" /><!-- add image logo -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- top navigation bar -->
-    <div id="header">
-      <ul id="navbar">
-        <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="shopping.php">Shopping</a></li>
-        <li><a href="services.php">Services</a></li>
-      </ul>
-      <ul id="navbar">
-        <li><a href="orders.php">Orders</a></li>
-        <li><a href="cart.php">Cart</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Thapar_Basket" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thapar_Basket</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png" /><!-- add image logo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- top navigation bar -->
+  <div id="header">
+    <ul id="navbar">
+      <li><a class="active" href="index.php">Home</a></li>
+      <li><a href="shopping.php">Shopping</a></li>
+      <li><a href="services.php">Services</a></li>
+    </ul>
+    <ul id="navbar">
+      <li><a href="orders.php">Orders</a></li>
+      <li><a href="cart.php">Cart</a></li>
+    </ul>
+  </div>
+
+  <!-- pic section below nav bar -->
+  <section id="pic">
+    <img src="images/bg.png" alt="welcome" /><!-- change background image-->
+  </section>
+
+  <!-- feature below our pic section -->
+  <marquee>
+    <h3 style="color: lightseagreen; padding-bottom: 0px; margin-bottom: 0px; font-size: 20px;">
+      Welcome to Thapar Basket, where all your shopping needs come true with just a few clicks!
+    </h3>
+  </marquee>
+
+  <!-- Footer -->
+  <footer>
+    <hr />
+    <div class="footer">
+      <div class="col1"><!-- change completely-->
+        <img src="images/logo.png" alt="logo">
+        <h4>Contact details-</h4>
+        <p><b>Email:</b> ThaparBasket@gmail.com</p>
+        <p><b>Follow us:</b></p>
+        <div class="follow">
+          <a href="#"><img src="images/instagram.jpg" alt="cart"></a>
+          <a href="#"><img src="images/twitter.jpg" alt="cart"></a>
+          <a href="#"><img src="images/youtube.jpg" alt="cart"></a>
+          <a href="#"><img src="images/facebook.png" alt="cart"></a>
+        </div>
+      </div>
+
+      <div class="col2">
+        <h4>Write to us</h4>
+        <form class="text" method="post" action="suggestions.php"><!-- redirect page link -->
+          <textarea name="message" rows="10" cols="30" placeholder="Report an error or give feedback to us. We will contact you regarding it."></textarea><br><br>
+          <input type="tel" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
     </div>
 
-    <!-- pic section below nav bar -->
-    <section id="pic">
-      <img src="images/bg.png" alt="welcome" /><!-- change background image-->
-    </section>
+    <h4>&copy; 2023 This is an original website by Thapar Basket</h4>
+  </footer>
+  
+</body>
 
-    <!-- feature below our pic section -->
-    <marquee>
-      <h3 style="color: lightseagreen;padding-bottom: 0px;margin-bottom: 0px;font-size: 20px;">
-        Welcome to Thapar Basket, where all your shopping needs come true with just a few clicks!
-      </h3>
-    </marquee>
-
-    <!-- Footer -->
-    <footer>
-        <hr />
-        <div class="footer">
-
-        <div class="col1"><!-- change completely-->
-                <img src="images/logo.png" alt="logo">
-                <h4>Contact details- </h4>
-                <p><b>Email: </b>ThaparBasket@gmail.com</p>
-                <p><b>Follow us: </b></p>
-                <div class="follow">
-                    <a href="#"><img src="images/facebook.png" alt="cart"></a>
-                    <a href="#"><img src="images/instagram.jpg" alt="cart"></a>
-                    <a href="#"><img src="images/twitter.jpg" alt="cart"></a>
-                    <a href="#"><img src="images/youtube.jpg" alt="cart"></a>
-                </div>
-            </div>
-
-            <div class="col2">
-                <h4>Write to us</h4>
-                <form class="text" method="post" action="suggestions.php"><!-- redirect page link -->
-                    <textarea name="message" rows="10" cols="30" placeholder="Report an error or give feedback to us. We will contact you regarding it."></textarea><br><br>
-                    <input type="tel" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
-                    <input type="submit" name="submit" value="Submit">
-                </form>
-            </div>
-
-        </div>
-
-        <h4>&copy; 2023 This is an original website by Thapar Basket</h4>
-    </footer>
-
-  </body>
 </html>
