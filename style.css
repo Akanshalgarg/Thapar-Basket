@@ -302,7 +302,7 @@ button:hover {
 
 /* Responsiveness using media query */
 /* For tablet devices */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
