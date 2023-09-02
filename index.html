@@ -1,71 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Thapar_Basket" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thapar_Basket</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png" /><!-- add image logo -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- top navigation bar -->
-    <div id="header">
-      <ul id="navbar">
-        <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="shopping.php">Shopping</a></li>
-        <li><a href="services.php">Services</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Thapar_Basket" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThaparBasket</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="logo" src="images/logo.png" alt="logo">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link" href="index.html">Home</a></li>
+        <li><a class="navbar-link" href="shopping.html">Shopping</a></li>
+        <li><a class="navbar-link" href="services.html">Services</a></li>
+        <li><a class="navbar-link" href="orders.html">Orders</a></li>
+        <li><a class="cart_image" href="cart.html"><img src="images/cart.png" alt="cart"></a></li>
       </ul>
-      <ul id="navbar">
-        <li><a href="orders.php">Orders</a></li>
-        <li><a href="cart.php">Cart</a></li>
-      </ul>
+    </nav>
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
     </div>
+  </header>
 
-    <!-- pic section below nav bar -->
+  <main>
     <section id="pic">
-      <img src="images/bg.png" alt="welcome" /><!-- change background image-->
+      <img src="images/bg.png" alt="welcome" />
     </section>
 
-    <!-- feature below our pic section -->
     <marquee>
-      <h3 style="color: lightseagreen;padding-bottom: 0px;margin-bottom: 0px;font-size: 20px;">
+      <h3 style="color: #20b2aa;padding-bottom: 0px;margin-bottom: 0px;font-size: 20px;">
         Welcome to Thapar Basket, where all your shopping needs come true with just a few clicks!
       </h3>
     </marquee>
-
-    <!-- Footer -->
-    <footer>
-        <hr />
-        <div class="footer">
-
-        <div class="col1"><!-- change completely-->
-                <img src="images/logo.png" alt="logo">
-                <h4>Contact details- </h4>
-                <p><b>Email: </b>ThaparBasket@gmail.com</p>
-                <p><b>Follow us: </b></p>
-                <div class="follow">
-                    <a href="#"><img src="images/facebook.png" alt="cart"></a>
-                    <a href="#"><img src="images/instagram.jpg" alt="cart"></a>
-                    <a href="#"><img src="images/twitter.jpg" alt="cart"></a>
-                    <a href="#"><img src="images/youtube.jpg" alt="cart"></a>
-                </div>
-            </div>
-
-            <div class="col2">
-                <h4>Write to us</h4>
-                <form class="text" method="post" action="suggestions.php"><!-- redirect page link -->
-                    <textarea name="message" rows="10" cols="30" placeholder="Report an error or give feedback to us. We will contact you regarding it."></textarea><br><br>
-                    <input type="tel" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
-                    <input type="submit" name="submit" value="Submit">
-                </form>
-            </div>
-
+    
+  </main>
+  <br><br>
+<br>
+  <footer>
+    <div class="flex-item small">
+      <div class="col1"><!-- change completely-->
+        <img  src="images/logo.png" alt="logo">
+        <h4>Contact details-</h4>
+        <p><b>Email:</b> ThaparBasket@gmail.com</p>
+        <p><b>Follow us:</b></p>
+        <div class="follow">
+          <a href="#"><img src="images/instagram.jpg" alt="cart"></a>
+          <a href="#"><img src="images/twitter.jpg" alt="cart"></a>
+          <a href="#"><img src="images/youtube.jpg" alt="cart"></a>
+          <a href="#"><img src="images/facebook.png" alt="cart"></a>
         </div>
+      </div>
+    </div>
+    <div class="flex-item small ">
+      <h3>Quick Links</h3>
+      <ul class="drop">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shopping.html">Shopping</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="cart.html"></a></li>
+      </ul>
+    </div>
+    <div class="flex-item large">
+      <br>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110180.86452549945!2d76.32665241306019!3d30.34662931493781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391028935a3313df%3A0xd5bc56ad3b90bc7f!2sPatiala%2C%20Punjab!5e0!3m2!1sen!2sin!4v1681582877986!5m2!1sen!2sin"
+        width="500" height="200" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-        <h4>&copy; 2023 This is an original website by Thapar Basket</h4>
-    </footer>
+    <div class="flex-item large">
+      <h3>Suggestions</h3>
+      <br>
+      <form>
+        <input type="email" placeholder="Enter your email" required >
+        <textarea rows="4" placeholder="Enter your suggestion"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+   
+  </footer>
+  <center>
+    <h4>&copy; 2023 This is an original website by Thapar Basket</h4>
+  </center>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
 
-  </body>
+</body>
+
 </html>
+
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Thapar_Basket" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thapar_Basket</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="header">
+    <ul id="navbar">
+      <li><a class="active" href="index.php">Home</a></li>
+      <li><a href="shopping.php">Shopping</a></li>
+      <li><a href="services.php">Services</a></li>
+    </ul>
+    <ul id="navbar">
+      <li><a href="orders.php">Orders</a></li>
+      <li><a href="cart.php">Cart</a></li>
+    </ul>
+  </div>
+
+  <section id="pic">
+    <img src="images/bg.png" alt="welcome" />
+  </section>
+
+
+  <marquee>
+    <h3 style="color: lightseagreen; padding-bottom: 0px; margin-bottom: 0px; font-size: 20px;">
+      Welcome to Thapar Basket, where all your shopping needs come true with just a few clicks!
+    </h3>
+  </marquee>
+
+
+  <footer>
+    <hr />
+    <div class="footer">
+      <div class="col1">
+        <img src="images/logo.png" alt="logo">
+        <h4>Contact details-</h4>
+        <p><b>Email:</b> ThaparBasket@gmail.com</p>
+        <p><b>Follow us:</b></p>
+        <div class="follow">
+          <a href="#"><img src="images/instagram.jpg" alt="cart"></a>
+          <a href="#"><img src="images/twitter.jpg" alt="cart"></a>
+          <a href="#"><img src="images/youtube.jpg" alt="cart"></a>
+          <a href="#"><img src="images/facebook.png" alt="cart"></a>
+        </div>
+      </div>
+
+      <div class="col2">
+        <h4>Write to us</h4>
+        <form class="text" method="post" action="suggestions.php">
+          <textarea name="message" rows="10" cols="30" placeholder="Report an error or give feedback to us. We will contact you regarding it."></textarea><br><br>
+          <input type="tel" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <h4>&copy; 2023 This is an original website by Thapar Basket</h4>
+  </footer>
+  
+</body>
+
+</html>
+ -->
